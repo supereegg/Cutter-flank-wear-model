@@ -11,3 +11,4 @@ COPY run.sh .
 
 RUN sed -i 's/\r$//' run.sh && chmod +x run.sh
 CMD ["sh", "run.sh"]
+
