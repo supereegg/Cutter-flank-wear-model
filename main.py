@@ -4,7 +4,7 @@
 # - Reads eval data from /tcdata using the official DataLoader
 # - Extracts features via lib.feature_engineering.get_features
 # - Loads model trained on log1p(Δwear) - not enabled
-# - Applies np.expm1() to revert predictions to Δwear
+# - Applies np.expm1() to revert predictions to Δwear - not enabled 
 # - Saves /work/result.csv with columns: set_num, cut_num, pred
 
 import os, json, numpy as np, pandas as pd, joblib
