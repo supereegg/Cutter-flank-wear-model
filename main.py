@@ -3,7 +3,7 @@
 # Runs inside the PHM portal container:
 # - Reads eval data from /tcdata using the official DataLoader
 # - Extracts features via lib.feature_engineering.get_features
-# - Loads your RF model trained on log1p(Δwear)
+# - Loads model trained on log1p(Δwear)
 # - Applies np.expm1() to revert predictions to Δwear
 # - Saves /work/result.csv with columns: set_num, cut_num, pred
 
